@@ -1,5 +1,8 @@
 :root {
     font-family: sans-serif;
+    --color-blue-social: #0085ff;
+    --color-red: #ff4f4f;
+    --color-orange: #ff7d1b;
 }
 body {
     margin: 0;
@@ -8,8 +11,8 @@ body {
     height: 50vh;
     background: linear-gradient(
     to right bottom,
-    #ff4f4f, 
-    #ff7d1b);
+    var(--color-red), 
+    var(--color-orange));
     color: white;
     display: grid;
     place-items: center;
@@ -34,7 +37,8 @@ body {
     max-width: 75ch;
     font-style: italic;
 }
-.profile__links {
+.profile__links,
+.footer__links {
     padding: 0;
     list-style: none;
     display: flex;
@@ -42,7 +46,23 @@ body {
     width: fit-content;
     grid-auto-flow: column;
     gap: 16px;
-    color: #0085ff;
+    color: var(--color-blue-social);
+}
+.footer {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 16px;
+}
+.footer__links {
+    margin: 0;
+    justify-self: end;
 }
 h1 {
     margin: 32px auto;
