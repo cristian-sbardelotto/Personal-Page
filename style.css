@@ -30,7 +30,7 @@ body {
     box-shadow: 0 4px 4px #0004;
 }
 .profile__copy{
-    margin: 0;
+    margin: 32px auto;
     max-width: 75ch;
     font-style: italic;
 }
@@ -42,6 +42,7 @@ body {
     width: fit-content;
     grid-auto-flow: column;
     gap: 16px;
+    color: #0085ff;
 }
 h1 {
     margin: 32px auto;
