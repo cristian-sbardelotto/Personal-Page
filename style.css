@@ -3,16 +3,22 @@
     --color-blue-social: #0085ff;
     --color-red: #ff4f4f;
     --color-orange: #ff7d1b;
+    --color-purple: #6e186e;
 }
 body {
     margin: 0;
 }
+h1 {
+    margin: 32px auto;
+    text-shadow: 0 4px 4px #0004;
+    width: 20ch;
+}
 .header {
-    height: 50vh;
+    height: 33vh;
     background: linear-gradient(
     to right bottom,
-    var(--color-red), 
-    var(--color-orange));
+    var(--color-purple), 
+    var(--color-red));
     color: white;
     display: grid;
     place-items: center;
@@ -22,7 +28,6 @@ body {
 .profile {
     position: relative;
     top: -75px;
-    border: 5px dotted greenyellow;
     text-align: center;
 }
 .profile__avatar {
@@ -36,6 +41,11 @@ body {
     margin: 32px auto;
     max-width: 75ch;
     font-style: italic;
+    font-size: 12pt;
+}
+.profile__introducion {
+    max-width: 150ch;
+    margin: 32px auto;
 }
 .profile__links,
 .footer__links {
@@ -48,6 +58,15 @@ body {
     gap: 16px;
     color: var(--color-blue-social);
 }
+a:link {
+    color: var(--color-blue-social);
+}
+a:visited {
+    color: var(--color-blue-social);
+}
+a:hover {
+    color: #0084ffb2;
+}
 .footer {
     box-sizing: border-box;
     background-color: black;
@@ -58,15 +77,13 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    padding: 16px;
+    padding: 10px;
 }
 .footer__links {
     margin: 0;
     justify-self: end;
+    padding: 16px;
 }
-h1 {
-    margin: 32px auto;
-    text-shadow: 0 4px 4px #0004;
-    width: 20ch;
-}
+
+
 
